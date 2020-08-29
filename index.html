@@ -1,109 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Web design</title>
+    <!--The head has information about what the page needs-->
+    <title>My first website!</title>
+
+    <!--The link tab allows us to link the html file to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-
-    <p>
-      En un rincón db e las sierras donde arden las estrellas Dejé mi herida
-      abierta en un valle de penas Casi sin darte cuenta se te puede enfermar el
-      corazón Cuando uno menos lo espera, el veneno ya está en tus venas En un
-      río de deshielo, al sol de una mañana Trajeron en un cuerpo a un ángel de
-      montaña Un par de ojos negros te pueden robar la ilusión Y no hay cura ni
-      remedio que te haga ver mejor La luna y mi suerte, rompieron el encanto
-      Perdí mi sueño en la noche que el ángel se hizo diablo Un par de ojos
-      negros te pueden robar la ilusión
-    </p>
-
-    <p>
-      En un rincón de las sierras donde arden las estrellas Dejé mi herida
-      abierta en un valle de penas Casi sin darte cuenta se te puede enfermar el
-      corazón Cuando uno menos lo espera, el veneno ya está en tus venas En un
-      río de deshielo, al sol de una mañana
-      <strong> Trajeron en un cuerpo a un ángel de montaña</strong>
-      Un par de
-      <a href="https://es.wiktionary.org/wiki/ojo" target="_blank">ojos</a>
-      negros te pueden robar la ilusión Y no hay cura ni remedio que te haga ver
-      mejor La luna y mi suerte, rompieron el encanto Perdí mi sueño en la noche
-      que el ángel se hizo diablo Un par de ojos negros te pueden robar la
-      ilusión
-    </p>
-    <ul>
-      <li>List 1</li>
-      <li>List 2</li>
-      <li>List 3</li>
-    </ul>
-
-    <ol>
-      <li>List 1</li>
-      <li>List 2</li>
-      <li>List 3</li>
-    </ol>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Age</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Enzo</td>
-          <td>enzoschiavoni95@gmail.com</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>Laureano</td>
-          <td>schialaure@gmail.com</td>
-          <td>27</td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
-    <hr />
-    <br />
-    <form action="process.php" method="POST">
-      <div>
-        <label>First Name</label>
-        <input type="text" name="first_name" />
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Home</h2>
+      <div id="div1">
+        <p class="webtext active">Lorem ipsum dolor sit amet</p>
+        <p class="webtext">Lorem ipsum dolor sit amet</p>
+        <p class="webtext">Lorem ipsum dolor sit amet</p>
+        <p class="webtext">Lorem ipsum dolor sit amet</p>
       </div>
-      <br />
-      <div>
-        <label>Last Name</label>
-        <input type="text" name="last_name" />
+      <div id="div2">
+        <p class="webtext active">Lorem ipsum dolor sit amet</p>
+        <p class="webtext">Lorem ipsum dolor sit amet</p>
+        <p class="webtext">Lorem ipsum dolor sit amet</p>
+        <p class="webtext">Lorem ipsum dolor sit amet</p>
       </div>
-      <br />
-      <div>
-        <label>Email</label>
-        <input type="email" name="email" />
-      </div>
-      <br />
-      <div>
-        <label>Message</label>
-        <textarea name="message"></textarea>
-      </div>
-      <br />
-      <div>
-        <label>Gender</label>
-        <select name="gender">
-          <option value="Male">Male</option>
-          <option value="female">Female</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
-      <br />
-      <div>
-        <label>Birthday</label>
-        <input type="date" />
-      </div>
-    </form>
+    </section>
   </body>
 </html>
